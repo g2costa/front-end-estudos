@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --secao-bg-1: #172A3A;
+    --secao-bg-2: #F56476;
+    --font-color: #F6F1D1;
+    --font-size-titulo: 72px;
+    --font-weight-titulo: 900;
+}
+.dim_sections{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.dim_sections h1{
+    position: absolute;
+    color: var(--font-color);
+    font-size: var(--font-size-titulo);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#section_1{
+    background-color: var(--secao-bg-1);
+}
+#section_2{
+    background-color: var(--secao-bg-2);
+}
+.destaque_titulo{
+    font-size: var(--font-size-titulo);
+    font-weight: var(--font-weight-titulo);
+}
+#destaque1{
+    color: var(--secao-bg-2);
+}
+#destaque2{
+    color: var(--secao-bg-1);
+}

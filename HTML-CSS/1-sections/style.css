@@ -8,7 +8,8 @@
     --secao-bg-2: #F56476;
     --font-color: #F6F1D1;
     --font-size-titulo: 72px;
-    --font-weight-titulo: 900;
+    --font-weight-first-letter: 900;
+    --font-size-first-letter: 100px;
 }
 .dim_sections{
     position: relative;
@@ -34,10 +35,15 @@
 .destaque_titulo{
     font-size: var(--font-size-titulo);
     font-weight: var(--font-weight-titulo);
+    color: var(--font-color);
 }
-#destaque1{
+#destaque1::first-letter{
     color: var(--secao-bg-2);
+    font-size: var(--font-size-first-letter);
+    font-weight: var(--font-weight-first-letter);
 }
-#destaque2{
+#destaque2::first-letter{
     color: var(--secao-bg-1);
+    font-size: var(--font-size-first-letter);
+    font-weight: var(--font-weight-first-letter);
 }

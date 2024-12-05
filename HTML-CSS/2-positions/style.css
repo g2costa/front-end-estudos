@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-bg: #ADBABD;
+    --color-box1: #EE6055;
+    --color-box2: #F3A712;
+    --color-box3: #386FA4;
+    --color-box4: #1A1423;
+    --box-side-dim: 150px;
+    --color-box-shadow: #777;
+    --shadows-radius: 20px;
+    --size-numbers: 72px;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+.dim_box{
+    position: relative;
+    width: var(--box-side-dim);
+    height: var(--box-side-dim);
+}
+h1{
+    font-family: 'Krona One' serif;
+    font-size: var(--size-numbers);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-bg);
+    transform: translate(-50%, -50%);
+}
+#box1{
+    position: absolute;
+    background-color: var(--color-box1);
+    top: 0%;
+    left: 0%;
+    box-shadow: 10px 10px 20px var(--color-box-shadow);
+}
+#box2{
+    position: absolute;
+    background-color: var(--color-box2);
+    top: 0%;
+    right: 0%;
+    box-shadow: -10px 10px 20px var(--color-box-shadow);
+}
+#box3{
+    position: absolute;
+    background-color: var(--color-box3);
+    bottom: 0%;
+    right: 0%;
+    box-shadow: -10px -10px 20px var(--color-box-shadow);
+}
+#box4{
+    position: absolute;
+    background-color: var(--color-box4);
+    bottom: 0%;
+    left: 0%;
+    box-shadow: 10px -10px 20px var(--color-box-shadow);
+}

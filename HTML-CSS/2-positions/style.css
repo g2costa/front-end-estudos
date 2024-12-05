@@ -11,7 +11,7 @@
     --color-box4: #1A1423;
     --box-side-dim: 150px;
     --color-box-shadow: #777;
-    --shadows-radius: 20px;
+    --shadows-radius: 40px;
     --size-numbers: 72px;
 }
 main{
@@ -39,26 +39,26 @@ h1{
     background-color: var(--color-box1);
     top: 0%;
     left: 0%;
-    box-shadow: 10px 10px 20px var(--color-box-shadow);
+    box-shadow: 10px 10px var(--shadows-radius) var(--color-box-shadow);
 }
 #box2{
     position: absolute;
     background-color: var(--color-box2);
     top: 0%;
     right: 0%;
-    box-shadow: -10px 10px 20px var(--color-box-shadow);
+    box-shadow: -10px 10px var(--shadows-radius) var(--color-box-shadow);
 }
 #box3{
     position: absolute;
     background-color: var(--color-box3);
     bottom: 0%;
     right: 0%;
-    box-shadow: -10px -10px 20px var(--color-box-shadow);
+    box-shadow: -10px -10px var(--shadows-radius) var(--color-box-shadow);
 }
 #box4{
     position: absolute;
     background-color: var(--color-box4);
     bottom: 0%;
     left: 0%;
-    box-shadow: 10px -10px 20px var(--color-box-shadow);
+    box-shadow: 10px -10px var(--shadows-radius) var(--color-box-shadow);
 }

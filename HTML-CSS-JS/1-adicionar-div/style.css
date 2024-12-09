@@ -5,6 +5,11 @@
 }
 :root{
     --color-bg: #f5E565A;
+    --color-button-bg: #B2FFA9;
+    --color-box: #407899;
+    --color-box-shadow: #d6d6d6;
+    --font-principal: "Krona One" sans-serif;
+    --box-dimension: 150px;
 }
 body{
     display: flex;
@@ -19,8 +24,8 @@ button{
     margin: 25px 0;
     border: none;
     border-radius: 8px;
-    background-color: #B2FFA9;
-    font-family: "Krona One" sans-serif;
+    background-color: var(--color-button-bg);
+    font-family: var(--font-principal);
     font-size: 18px;
     cursor: pointer;
     transition: 0.2s;
@@ -37,9 +42,9 @@ button:active{
     height: 600px;
 }
 .box{
-    background-color: #407899;
-    width: 150px;
-    height: 150px;
+    background-color: var(--color-box);
+    width: var(--box-dimension);
+    height: var(--box-dimension);
     border-radius: 16px;
-    box-shadow: 10px 10px 20px #d6d6d6;
+    box-shadow: 10px 10px 20px var(--color-box-shadow);
 }

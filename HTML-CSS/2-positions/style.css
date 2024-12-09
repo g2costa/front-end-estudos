@@ -26,7 +26,7 @@ main{
     height: var(--box-side-dim);
 }
 h1{
-    font-family: 'Krona One' serif;
+    font-family: 'Krona One' sans-serif;
     font-size: var(--size-numbers);
     position: absolute;
     top: 50%;

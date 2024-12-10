@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-bg: #F6F4F3;
+    --color-div-1: #28587B;
+    --color-div-2: #ED254E;
+    --box-dim: 150px;
+    --color-shadow: #c7c7c7;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+#box {
+    width: var(--box-dim);
+    height: var(--box-dim);
+    border-radius: 16px;
+    box-shadow: 10px 10px 20px var(--color-shadow);
+    cursor: pointer;
+    transition: 0.125s;
+}
+#box:active{
+    transform: scale(0.95);
+    transition: 0.125s;
+}
+.style-1 {
+    background-color: var(--color-div-1);
+}
+.style-2 {
+    background-color: var(--color-div-2);
+}

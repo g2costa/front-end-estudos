@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #4F6D7A;
+    color: white;
+    font-family: "Krona One", serif;
+}
+.input-section {
+    margin: 25px;
+}
+.input-section input{
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 350px;
+    height: 33px;
+    padding: 0 8px;
+}
+.input-section button {
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(4, 219, 4);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+ul {
+ padding: 0 25px;
+ list-style: none;
+}

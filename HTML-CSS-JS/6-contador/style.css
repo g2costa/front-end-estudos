@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --dim-box: 150px;
+    --border-thickness: 15px;
+    --color-bg: #D8E1FF;
+    --color-border: #7a7a7a;
+    --arrow-radius: 16px;
+    --color-display: #EAE6E5;
+    --color-shadow:#a3a3a3;
+    --arrow-movment: 25px;
+    --color-arrow-mouse-over: #363636;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--dim-box);
+    height: var(--dim-box);
+    background-color: transparent;
+    border-radius: var(--arrow-radius);
+    box-shadow: 10px 10px 20px var(--color-shadow);
+}
+.display-number {
+    font-size: 72px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #8a8a8a;
+}
+.arrow {
+    width: calc(var(--dim-box) / 3);
+    height: calc(var(--dim-box) / 3);
+    background-color: transparent;
+    border-top: var(--border-thickness) solid var(--color-border);
+    border-right: var(--border-thickness) solid var(--color-border);
+    border-top-right-radius: calc(var(--arrow-radius) * 2);
+    transition: 0.2s;
+}
+#left-arrow {
+    transform: rotate(-135deg);
+}
+#left-arrow-rail {
+    margin-right: calc( var(--arrow-gap) * -1 );
+    transition: 0.2s;
+}
+#left-arrow-rail:hover #left-arrow {
+    width: calc(var(--dim-box) / 3);
+    height: calc(var(--dim-box) / 3);
+    background-color: transparent;
+    border-top: var(--border-thickness) solid var(--color-arrow-mouse-over);
+    border-right: var(--border-thickness) solid var(--color-arrow-mouse-over);
+    border-top-right-radius: calc(var(--arrow-radius) * 2);
+    transform: rotate(-135deg);
+    transition: 0.2s;
+}
+
+.container:hover #left-arrow-rail{
+    transform: translateX(calc(var(--arrow-movment) * -1) );
+    transition: 0.2s;
+}
+#right-arrow {
+    transform: rotate(45deg);
+}
+#right-arrow-rail {
+    margin-left: calc( var(--arrow-gap) * -1);
+    transition: 0.2s;
+}
+#right-arrow-rail:hover #right-arrow {
+    width: calc(var(--dim-box) / 3);
+    height: calc(var(--dim-box) / 3);
+    background-color: transparent;
+    border-top: var(--border-thickness) solid var(--color-arrow-mouse-over);
+    border-right: var(--border-thickness) solid var(--color-arrow-mouse-over);
+    border-top-right-radius: calc(var(--arrow-radius) * 2);
+    transform: rotate(45);
+    transition: 0.2s;
+}
+.container:hover #right-arrow-rail {
+    transform: translateX(var(--arrow-movment));
+    transition: 0.2s;
+}

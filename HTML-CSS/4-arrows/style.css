@@ -1,0 +1,22 @@
+:root {
+    --dim-box: 50px;
+    --border-thickness: 15px;
+    --color-bg: #084C61;
+    --color-border: #E3B505;
+    --arrow-radius: 25px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+    padding: 25px;
+
+}
+.arrow {
+    width: var(--dim-box);
+    height: var(--dim-box);
+    border-top: var(--border-thickness) solid var(--color-border);
+    border-right: var(--border-thickness) solid var(--color-border);
+    border-top-right-radius: var(--arrow-radius);
+    transform: rotate(45deg);
+}

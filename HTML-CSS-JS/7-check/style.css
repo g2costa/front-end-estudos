@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --checkbox-size: 20px;
+    --chekbox-border-radius: 5px;
+}
+.container{
+    padding: 25px;
+}
+.checkbox-style{
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    border: 2px solid gray;
+    border-radius: var(--chekbox-border-radius);
+    cursor: pointer;
+}
+.checked-style{
+    background-color: rgb(48, 48, 48);
+}

@@ -40,6 +40,7 @@ body {
     color: #8a8a8a;
 }
 .arrow {
+    cursor: pointer;
     width: calc(var(--dim-box) / 3);
     height: calc(var(--dim-box) / 3);
     background-color: transparent;
